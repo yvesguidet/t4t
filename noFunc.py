@@ -8,7 +8,12 @@ n = int(input('nb de données ? '))
 print('{} données à lire'.format(n))
 assert n > 0
 
-print('list(range(n)) = {}'.format(list(range(n))))
+# première val.
+
+ppz = eval(input('première valeur ? ')) # eval() mieux que int()
+print('ppz = {}'.format(ppz))
+
+print('list(range(1, n)) = {}'.format(list(range(1, n))))
 
 for i in range(n):
 	print('i = {}'.format(i))
