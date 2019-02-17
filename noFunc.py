@@ -10,12 +10,27 @@ assert n > 0
 
 # première val.
 
-ppz = eval(input('première valeur ? ')) # eval() mieux que int()
+ppz = int(input('première valeur ? ')) 
+pin = ppz < 0	# ppz is negative
+
 print('ppz = {}'.format(ppz))
+print('pin = {}'.format(pin))
 
 print('list(range(1, n)) = {}'.format(list(range(1, n))))
 
-for i in range(n):
+for i in range(1, n):
 	print('i = {}'.format(i))
+	v = eval(input('valeur no {} (à partir de 0)  ? '.format(i))) # eval() mieux que int()
 
-assert 0, 'finir'
+	if abs(v) > abs(ppz):
+		assert 0, 'rien à faire'
+	elif abs(v) == abs(ppz):
+		if pin and v > 0:
+			ppz = v
+		else:
+			pass	# ?
+	else:
+		ppz = v
+		
+
+print('ppz = {}'.format(ppz))
