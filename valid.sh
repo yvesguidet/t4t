@@ -25,10 +25,15 @@ echo 1 > temp.txt
 echo -4 >> temp.txt
 python3 noFunc.py < temp.txt
 
-
 echo test 2
 echo 2 > temp.txt
 echo -4 >> temp.txt
 echo 4 >> temp.txt
+python3 noFunc.py < temp.txt
+
+echo test 3
+echo 2 > temp.txt
+echo 4 >> temp.txt
+echo -4 >> temp.txt
 python3 noFunc.py < temp.txt
 
