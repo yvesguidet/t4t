@@ -42,6 +42,7 @@ echo test 4
 echo 6 > temp.txt
 echo -5 >> temp.txt
 echo 5 >> temp.txt
+echo 4 >> temp.txt
 echo 32 >> temp.txt
 echo -33 >> temp.txt
 echo -0.1 >> temp.txt
